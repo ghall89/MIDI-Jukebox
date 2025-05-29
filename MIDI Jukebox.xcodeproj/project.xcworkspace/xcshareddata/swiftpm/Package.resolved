@@ -1,0 +1,24 @@
+{
+  "originHash" : "18c16f8704f33c77000eedac05cf94a52d98e2ea37277161a660d5269372be71",
+  "pins" : [
+    {
+      "identity" : "aquaui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jonsterling/AquaUI",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9666b8db527a126fa6f893d497016d8228b64020"
+      }
+    },
+    {
+      "identity" : "compactslider",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/buh/CompactSlider.git",
+      "state" : {
+        "revision" : "f07c7a5d03a2d9541aae1b7ebff861b77561ee31",
+        "version" : "2.0.9"
+      }
+    }
+  ],
+  "version" : 3
+}
