@@ -1,6 +1,6 @@
 # MIDI Jukebox
 
-![GitHub](https://img.shields.io/github/license/ghall89/AutoDock) ![GitHub release (with filter)](https://img.shields.io/github/v/release/ghall89/AutoDock)
+![GitHub](https://img.shields.io/github/license/ghall89/MIDI-Jukebox) ![GitHub release (with filter)](https://img.shields.io/github/v/release/ghall89/MIDI-Jukebox)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T66ELM7)
 
@@ -31,3 +31,4 @@ _Note: It is entirely possible the app can be compiled to run on older versions 
 ## Dependencies
 
 - [CompactSlider](https://github.com/buh/CompactSlider)
+- [AquaUI](https://github.com/jonsterling/AquaUI)
