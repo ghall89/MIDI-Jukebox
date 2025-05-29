@@ -7,9 +7,11 @@ struct ProgressView: View {
 	var body: some View {
 		VStack {
 			Text(midiController.trackName)
+				.font(.custom("Helvetica", size: 14))
 				.foregroundStyle(Color.windowGradientEnd)
-			HStack {
+			HStack(alignment: .center) {
 				Text(formatTimeInterval(midiController.currentPosition))
+					.font(.custom("Helvetica", size: 11))
 					.foregroundStyle(Color.windowGradientEnd)
 				CompactSlider(value: $midiController.currentPosition, in: 0 ... midiController.player.duration)
 					.compactSliderHandleStyle(.capsule(color: .primary))
