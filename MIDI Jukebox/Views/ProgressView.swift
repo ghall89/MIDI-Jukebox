@@ -8,13 +8,13 @@ struct ProgressView: View {
 		VStack {
 			Text(midiController.trackName)
 				.font(.custom("Helvetica", size: 14))
-				.foregroundStyle(Color.windowGradientEnd)
+				.foregroundStyle(Color.lcdText)
 			HStack(alignment: .center) {
 				Text(formatTimeInterval(midiController.currentPosition))
 					.font(.custom("Helvetica", size: 11))
-					.foregroundStyle(Color.windowGradientEnd)
+					.foregroundStyle(Color.lcdText)
 				CompactSlider(value: $midiController.currentPosition, in: 0 ... midiController.player.duration)
-					.compactSliderHandleStyle(.capsule(color: .primary))
+					.compactSliderHandleStyle(.capsule(color: .lcdText))
 					.frame(height: 8)
 			}
 		}
@@ -22,17 +22,17 @@ struct ProgressView: View {
 		.padding(8)
 		.background {
 			RoundedRectangle(cornerRadius: 4)
-				.fill(LinearGradient(gradient: Gradient(colors: [.trackInfoGradientStart, .trackInfoGradientEnd]), startPoint: .top, endPoint: .bottom))
+				.fill(.lcdGreenLit )
 		}
 		.padding(1)
 		.background {
 			RoundedRectangle(cornerRadius: 4)
-				.fill(.trackInfoGradientEnd)
+				.fill(.lcdText)
 		}
-		.padding(2)
+		.padding(1)
 		.background {
 			RoundedRectangle(cornerRadius: 5)
-				.fill(LinearGradient(gradient: Gradient(colors: [.windowGradientEnd, .windowGradientStart]), startPoint: .top, endPoint: .bottom))
+				.fill(LinearGradient(gradient: Gradient(colors: [.windowGradientEnd, .windowGradientMid]), startPoint: .top, endPoint: .bottom))
 		}
 	}
 

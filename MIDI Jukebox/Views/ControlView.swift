@@ -13,10 +13,8 @@ struct ControlView: View {
 			.buttonStyle(ControlButtonStyle())
 			Button(action: midiController.playPause, label: {
 				Image(systemName: midiController.player.isPlaying ? "pause.fill" : "play.fill")
-				
 			})
-			.buttonStyle(ControlButtonStyle())
-			
+			.buttonStyle(ControlButtonStyle(keepPressed: midiController.player.isPlaying))
 			Button(action: {
 				midiController.seek(direction: .forward)
 			}, label: {
@@ -43,7 +41,7 @@ struct ControlView: View {
 					Image(systemName: "repeat")
 				})
 				.toggleStyle(.button)
-				.buttonStyle(ControlButtonStyle())
+				.buttonStyle(ControlButtonStyle(keepPressed: midiController.loopTrack))
 			}
 			.frame(maxWidth: .infinity)
 		}

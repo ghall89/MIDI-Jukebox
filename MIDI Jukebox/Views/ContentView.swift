@@ -11,16 +11,16 @@ struct ContentView: View {
 	var body: some View {
 		VStack(spacing: 10) {
 			ProgressView()
+				.offset(y: -14)
 			ControlView()
 		}
 		.padding()
 		.padding(.top, 0)
 		.background {
-			LinearGradient(gradient: Gradient(colors: [.windowGradientStart, .windowGradientEnd]), startPoint: .top, endPoint: .bottom)
-				.frame(height: 190)
+			WindowBackgroundView()
 		}
 		.ignoresSafeArea(.all)
-		.frame(width: 500)
+		.frame(width: 500, height: 145)
 		.environmentObject(midiController)
 	}
 }
